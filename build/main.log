@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  25 MAY 2026 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  26 MAY 2026 00:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -225,57 +225,55 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <figures/trig-substitution-sine.png, id=17, 311.1625pt x 195.73125pt>
 File: figures/trig-substitution-sine.png Graphic file (type png)
 <use figures/trig-substitution-sine.png>
-Package pdftex.def Info: figures/trig-substitution-sine.png  used on input line 100.
+Package pdftex.def Info: figures/trig-substitution-sine.png  used on input line 99.
 (pdftex.def)             Requested size: 211.38832pt x 132.97003pt.
 <figures/trig-substitution-tangent.png, id=19, 311.1625pt x 180.675pt>
 File: figures/trig-substitution-tangent.png Graphic file (type png)
 <use figures/trig-substitution-tangent.png>
-Package pdftex.def Info: figures/trig-substitution-tangent.png  used on input line 131.
+Package pdftex.def Info: figures/trig-substitution-tangent.png  used on input line 129.
 (pdftex.def)             Requested size: 211.38832pt x 122.74158pt.
 
 
-[2 <./figures/trig-substitution-sine.png>]
-<figures/trig-substitution-secant.png, id=25, 386.44376pt x 175.65625pt>
+[2 <./figures/trig-substitution-sine.png> <./figures/trig-substitution-tangent.png>]
+<figures/trig-substitution-secant.png, id=26, 386.44376pt x 175.65625pt>
 File: figures/trig-substitution-secant.png Graphic file (type png)
 <use figures/trig-substitution-secant.png>
-Package pdftex.def Info: figures/trig-substitution-secant.png  used on input line 163.
+Package pdftex.def Info: figures/trig-substitution-secant.png  used on input line 159.
 (pdftex.def)             Requested size: 211.38832pt x 96.08589pt.
 
 
-[3 <./figures/trig-substitution-tangent.png> <./figures/trig-substitution-secant.png>]
+[3 <./figures/trig-substitution-secant.png>]
 
 [4]
-
-[5]
-<figures/integrand-reciprocal-root.png, id=38, 1107.13625pt x 346.29375pt>
+<figures/integrand-reciprocal-root.png, id=35, 1107.13625pt x 346.29375pt>
 File: figures/integrand-reciprocal-root.png Graphic file (type png)
 <use figures/integrand-reciprocal-root.png>
-Package pdftex.def Info: figures/integrand-reciprocal-root.png  used on input line 369.
+Package pdftex.def Info: figures/integrand-reciprocal-root.png  used on input line 343.
 (pdftex.def)             Requested size: 422.77664pt x 132.23763pt.
-<figures/antiderivative-log-root.png, id=39, 1105.12875pt x 343.2825pt>
+<figures/antiderivative-log-root.png, id=36, 1105.12875pt x 343.2825pt>
 File: figures/antiderivative-log-root.png Graphic file (type png)
 <use figures/antiderivative-log-root.png>
-Package pdftex.def Info: figures/antiderivative-log-root.png  used on input line 384.
+Package pdftex.def Info: figures/antiderivative-log-root.png  used on input line 358.
 (pdftex.def)             Requested size: 422.77664pt x 131.32346pt.
 
 
-[6 <./figures/integrand-reciprocal-root.png> <./figures/antiderivative-log-root.png>]
+[5 <./figures/integrand-reciprocal-root.png>]
 
-[7]
-<figures/electric-field-line-charge.pdf, id=53, 248.79851pt x 188.12082pt>
+[6 <./figures/antiderivative-log-root.png>]
+<figures/electric-field-line-charge.pdf, id=50, 248.79851pt x 188.12082pt>
 File: figures/electric-field-line-charge.pdf Graphic file (type pdf)
 <use figures/electric-field-line-charge.pdf>
-Package pdftex.def Info: figures/electric-field-line-charge.pdf  used on input line 498.
+Package pdftex.def Info: figures/electric-field-line-charge.pdf  used on input line 467.
 (pdftex.def)             Requested size: 352.31625pt x 266.41005pt.
 
 
-[8]
+[7]
 
-[9 <./figures/electric-field-line-charge.pdf>]
+[8 <./figures/electric-field-line-charge.pdf>]
 
-[10]
+[9]
 
-[11] (build/main.aux)
+[10] (build/main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -284,16 +282,16 @@ L3 programming layer <2025-01-18>
 Here is how much of TeX's memory you used:
  3149 strings out of 473190
  47100 string characters out of 5715801
- 449689 words of memory out of 5000000
+ 450689 words of memory out of 5000000
  26392 multiletter control sequences out of 15000+600000
  567600 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,10n,65p,625b,186s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,65p,614b,190s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on build/main.pdf (12 pages, 373026 bytes).
+Output written on build/main.pdf (11 pages, 373335 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 161 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

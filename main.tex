@@ -21,7 +21,7 @@
 
 \vspace{0.25in}
 
-{\Large with an Application in Physics
+{\Large with a Physics Application
 \par}
 
 \vspace{1.1in}
@@ -43,7 +43,7 @@ Trigonometric substitution is a technique used in calculus to evaluate integrals
 
 \section{Introduction}
 
-In integration, many expressions are difficult to handle directly because they contain square roots of quadratic expressions, such as \(a^2 - x^2\), \(a^2 + x^2\), and \(x^2 - a^2\). These forms are related to Pythagorean identities. Therefore, using trigonometric functions to replace the variable \(x\) can provide a way to work around the radicals. For instance, if an integral contains \(\sqrt{a^2 - x^2}\), the substitution \(x = a\sin(\theta)\) can eliminate the radical because of the identity \(1 - \sin^2(\theta) = \cos^2(\theta)\).
+In integration, many expressions are difficult to handle directly because they contain square roots of quadratic expressions, such as \(a^2 - x^2\), \(a^2 + x^2\), and \(x^2 - a^2\). These forms are related to Pythagorean identities. Using trigonometric functions to replace the variable \(x\) can provide a way to work around the radicals. For instance, if an integral contains \(\sqrt{a^2 - x^2}\), the substitution \(x = a\sin(\theta)\) can eliminate the radical because of the identity \(1 - \sin^2(\theta) = \cos^2(\theta)\).
 
 This paper explains trigonometric substitution algebraically, graphically, and numerically. It also discusses how this technique is powerful in physics, especially in problems involving fields. The goal is to reveal the hidden properties within trigonometric substitutions.
 
@@ -53,7 +53,7 @@ Before using trigonometric substitution, it is important to understand the restr
 
 First, the original expression may have its own domain that is not simply all real numbers. For instance, \(\sqrt{a^2 - x^2}\) is only defined when \(-a \le x \le a\), assuming \(a > 0\). The expression \(\sqrt{x^2 - a^2}\) is only defined when \(x \le -a\) or \(x \ge a\).
 
-Second, the trigonometric functions used in the substitutions must be restricted so that the substitution is one-to-one –- this allows reversing the substitution later. For instance, when using \(x = a\sin(\theta)\), it is common to choose \(-\frac{\pi}{2} \le \theta \le \frac{\pi}{2}\) because sine is one-to-one on that interval.
+Second, the trigonometric functions used in the substitutions must be restricted so that the substitution is one-to-one, which allows reversing the substitution later. For instance, when using \(x = a\sin(\theta)\), it is common to choose \(-\frac{\pi}{2} \le \theta \le \frac{\pi}{2}\) because sine is one-to-one on that interval.
 
 Third, absolute values must be handled carefully. For instance, \(\sqrt{\cos^2(\theta)} = |\cos(\theta)|\), instead of \(\sqrt{\cos^2(\theta)} = \cos(\theta)\), should be used in the intermediate steps of substitution.
 
@@ -61,7 +61,7 @@ The absolute values also hint at the piecewise nature of the results that this p
 
 \section{Derivation of the Three Main Substitutions}
 
-The three main trigonometric substitutions are based on the Pythagorean identities
+The three main trigonometric substitutions are based on these Pythagorean identities:
 \[
 1-\sin^2\theta=\cos^2\theta,\qquad
 1+\tan^2\theta=\sec^2\theta,\qquad
@@ -79,7 +79,6 @@ let
 \[
 u=a\sin\theta
 \]
-Then
 \[
 \sqrt{a^2-u^2}
 =\sqrt{a^2-a^2\sin^2\theta}
@@ -110,7 +109,6 @@ let
 \[
 u=a\tan\theta
 \]
-Then
 \[
 \sqrt{a^2+u^2}
 =\sqrt{a^2+a^2\tan^2\theta}
@@ -141,7 +139,6 @@ let
 \[
 u=a\sec\theta
 \]
-Then
 \[
 \sqrt{u^2-a^2}
 =\sqrt{a^2\sec^2\theta-a^2}
@@ -149,13 +146,12 @@ Then
 =\sqrt{a^2\tan^2\theta}
 =a|\tan\theta|
 \]
-Therefore,
 \[
 \sqrt{u^2-a^2}
 =
 \begin{cases}
-a\tan\theta, & u>a,\quad 0\le \theta\le \frac{\pi}{2}\\
--a\tan\theta, & u<-a,\quad \frac{\pi}{2}<\theta\le \pi
+a\tan\theta, & u>a,\quad 0<\theta<\frac{\pi}{2}\\
+-a\tan\theta, & u<-a,\quad \frac{\pi}{2}<\theta<\pi
 \end{cases}
 \]
 
@@ -163,7 +159,7 @@ a\tan\theta, & u>a,\quad 0\le \theta\le \frac{\pi}{2}\\
 \includegraphics[width=0.45\textwidth]{figures/trig-substitution-secant.png}
 \end{center}
 
-This pair of trigonometric substitution is especially complex due to its piecewise nature. Therefore, we will present an example algebraic derivation involving this substitution in the next section of this paper.
+This case is especially complex due to its piecewise nature. We will present an example algebraic derivation involving this substitution in the next section of this paper.
 
 
 \section{Algebraic Derivation for a Specific Example}
@@ -177,7 +173,6 @@ Let
 \theta = \arcsec x
 \]
 
-Then
 \[
 x = \sec \theta
 \]
@@ -186,7 +181,7 @@ where
 \theta \in \mathbb{R}, \qquad \theta \ne \frac{\pi}{2} + n\pi, \qquad n \in \mathbb{Z}
 \]
 
-First, consider the domain of \(x\):
+The domain of \(x\) is
 \[
 x^2 - 1 > 0
 \]
@@ -197,12 +192,11 @@ x^2 > 1
 x > 1 \quad \text{or} \quad x < -1
 \]
 
-Note that \(x \ne \pm 1\). Thus,
+Note that \(x \ne \pm 1\).
 \[
 \sec \theta \ne \pm 1
 \]
 
-Therefore,
 \[
 \theta \ne 0, \pi
 \]
@@ -212,37 +206,31 @@ For simplicity, we limit \(\theta\) to
 (0,\pi)
 \]
 
-Therefore, after considering all restrictions,
+After considering all restrictions,
 \[
 \theta \in \left(0,\frac{\pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right)
 \]
 
-Since
-\[
-x = \sec \theta
-\]
-we have
+Since \(x = \sec \theta\),
 \[
 \frac{dx}{d\theta} = \sec \theta \tan \theta
 \]
 
-Thus,
 \[
 dx = \sec \theta \tan \theta \, d\theta
 \]
 
-Substituting \(dx = \sec \theta \tan \theta \, d\theta\) and \(x = \sec \theta\) into the original integral:
+Substituting \(dx = \sec \theta \tan \theta \, d\theta\) and \(x = \sec \theta\) into the original integral gives
 \[
 \int \frac{dx}{\sqrt{x^2 - 1}}
 =
 \int \frac{\sec \theta \tan \theta \, d\theta}{\sqrt{\sec^2 \theta - 1}}
 \]
 
-Using
+From
 \[
 \sec^2 \theta - 1 = \tan^2 \theta
 \]
-we get
 \[
 \int \frac{\sec \theta \tan \theta \, d\theta}{\sqrt{\tan^2 \theta}}
 =
@@ -261,7 +249,6 @@ This is a piecewise integral:
 \end{cases}
 \]
 
-Therefore,
 \[
 =
 \begin{cases}
@@ -272,13 +259,7 @@ Therefore,
 \end{cases}
 \]
 
-Since
-\[
-\int \sec \theta \, d\theta
-=
-\ln |\tan \theta + \sec \theta| + C
-\]
-we get
+Since \(\int \sec \theta \, d\theta=\ln |\tan \theta + \sec \theta| + C\),
 \[
 =
 \begin{cases}
@@ -289,7 +270,7 @@ we get
 \end{cases}
 \]
 
-Substitute \(\theta = \arcsec x\) back:
+Substituting \(\theta = \arcsec x\) back gives
 \[
 =
 \begin{cases}
@@ -300,15 +281,10 @@ Substitute \(\theta = \arcsec x\) back:
 \end{cases}
 \]
 
-Now consider \(\tan(\arcsec x)\). Since
-\[
-\sec(\arcsec x) = x
-\]
-and
+For \(\tan(\arcsec x)\), \(\sec(\arcsec x)=x\) and
 \[
 \tan^2 \theta + 1 = \sec^2 \theta
 \]
-we have
 \[
 \tan \theta
 =
@@ -320,7 +296,6 @@ we have
 \end{cases}
 \]
 
-Therefore,
 \[
 \tan(\arcsec x)
 =
@@ -332,7 +307,6 @@ Therefore,
 \end{cases}
 \]
 
-Thus,
 \[
 \int \frac{dx}{\sqrt{x^2 - 1}}
 =
@@ -344,7 +318,7 @@ Thus,
 \end{cases}
 \]
 
-Using the domain restrictions to remove the absolute values, we can rewrite the final result as
+The domain restrictions allow the absolute values to be removed:
 \[
 \boxed{
 \int \frac{dx}{\sqrt{x^2 - 1}}
@@ -404,22 +378,20 @@ First, consider the definite integral
 \[
 \int_2^3 \frac{dx}{\sqrt{x^2-1}}
 \]
-This is a normal definite integral because the function is continuous on the entire interval \([2,3]\). Using the antiderivative from the previous section,
+This is a normal definite integral because the function is continuous on the entire interval \([2,3]\). The antiderivative from the previous section is
 \[
 F(x)=\ln\left|x+\sqrt{x^2-1}\right|
 \]
-we get
 \[
 \int_2^3 \frac{dx}{\sqrt{x^2-1}}
 =F(3)-F(2)
 \]
-Therefore,
 \[
 \int_2^3 \frac{dx}{\sqrt{x^2-1}}
 =
 \ln\left(3+\sqrt{8}\right)-\ln\left(2+\sqrt{3}\right)
 \]
-Using logarithm properties,
+By logarithm properties,
 \[
 \int_2^3 \frac{dx}{\sqrt{x^2-1}}
 =
@@ -437,17 +409,17 @@ Numerically,
 
 \subsection*{Improper Definite Integral}
 
-Now consider the definite integral
+Consider the definite integral
 \[
 \int_1^2 \frac{dx}{\sqrt{x^2-1}}
 \]
-This is an improper integral because the integrand is undefined at \(x=1\). Therefore, it must be rewritten as a limit:
+This is an improper integral because the integrand is undefined at \(x=1\). It must be rewritten as a limit:
 \[
 \int_1^2 \frac{dx}{\sqrt{x^2-1}}
 =
 \lim_{b\to 1^+}\int_b^2 \frac{dx}{\sqrt{x^2-1}}
 \]
-Using the same antiderivative,
+The same antiderivative gives
 \[
 \lim_{b\to 1^+}\int_b^2 \frac{dx}{\sqrt{x^2-1}}
 =
@@ -456,7 +428,6 @@ Using the same antiderivative,
 \ln\left(x+\sqrt{x^2-1}\right)
 \right]_b^2
 \]
-Thus,
 \[
 \int_1^2 \frac{dx}{\sqrt{x^2-1}}
 =
@@ -467,11 +438,9 @@ Thus,
 \ln\left(b+\sqrt{b^2-1}\right)
 \right)
 \]
-Since
 \[
 \lim_{b\to 1^+}\ln\left(b+\sqrt{b^2-1}\right)=\ln(1)=0
 \]
-we get
 \[
 \int_1^2 \frac{dx}{\sqrt{x^2-1}}
 =
@@ -513,7 +482,7 @@ By Coulomb's law,
 dE=\frac{k\,dq}{r^2}
 \]
 
-Substituting \(dq=\lambda\,dx\) and \(r^2=x^2+a^2\), we get
+Substituting \(dq=\lambda\,dx\) and \(r^2=x^2+a^2\) gives
 \[
 dE=\frac{k\lambda\,dx}{x^2+a^2}
 \]
@@ -529,13 +498,10 @@ From the right triangle,
 =
 \frac{a}{\sqrt{x^2+a^2}}
 \]
-
-Therefore,
 \[
 dE_y=dE\cos\theta
 \]
 
-So,
 \[
 dE_y
 =
@@ -546,7 +512,7 @@ dE_y
 \frac{k\lambda a\,dx}{(x^2+a^2)^{3/2}}
 \]
 
-Thus, the total vertical electric field is
+The total vertical electric field is
 \[
 E_y
 =
@@ -554,16 +520,13 @@ E_y
 \frac{k\lambda a\,dx}{(x^2+a^2)^{3/2}}
 \]
 
-Using the trigonometric substitution
+Use the trigonometric substitution
 \[
 x=a\tan\theta
 \]
-
-Then
 \[
 dx=a\sec^2\theta\,d\theta
 \]
-and
 \[
 x^2+a^2
 =
@@ -571,8 +534,6 @@ a^2\tan^2\theta+a^2
 =
 a^2\sec^2\theta
 \]
-
-Therefore,
 \[
 (x^2+a^2)^{3/2}
 =
@@ -581,14 +542,13 @@ a^3\sec^3\theta
 
 The limits become
 \[
-x=-L \Rightarrow \theta=\tan^{-1}\left(\frac{-L}{a}\right)
+lower=-L \Rightarrow \theta=\tan^{-1}\left(\frac{-L}{a}\right)
 \]
-and
 \[
-x=L \Rightarrow \theta=\tan^{-1}\left(\frac{L}{a}\right)
+upper=L \Rightarrow \theta=\tan^{-1}\left(\frac{L}{a}\right)
 \]
 
-Substituting into the integral,
+Substituting gives
 \[
 E_y
 =
@@ -596,8 +556,6 @@ E_y
 \frac{k\lambda a\cdot a\sec^2\theta}{a^3\sec^3\theta}
 \,d\theta
 \]
-
-Simplifying,
 \[
 E_y
 =
@@ -605,8 +563,7 @@ E_y
 \int_{\tan^{-1}(-L/a)}^{\tan^{-1}(L/a)}
 \cos\theta\,d\theta
 \]
-
-So,
+The Fundamental Theorem of Calculus gives
 \[
 E_y
 =
@@ -614,19 +571,19 @@ E_y
 \left[\sin\theta\right]_{\tan^{-1}(-L/a)}^{\tan^{-1}(L/a)}
 \]
 
-Since
+The trigonometric identities give
+
 \[
 \sin\left(\tan^{-1}\left(\frac{L}{a}\right)\right)
 =
 \frac{L}{\sqrt{L^2+a^2}}
 \]
-and
+
 \[
 \sin\left(\tan^{-1}\left(\frac{-L}{a}\right)\right)
 =
 \frac{-L}{\sqrt{L^2+a^2}}
 \]
-we get
 \[
 E_y
 =
@@ -638,14 +595,11 @@ E_y
 \right)
 \]
 
-Therefore,
 \[
 E_y
 =
 \frac{2k\lambda L}{a\sqrt{L^2+a^2}}
 \]
-
-Thus,
 \[
 \boxed{
 E=\frac{2k\lambda L}{a\sqrt{L^2+a^2}}
@@ -661,7 +615,7 @@ As \(L\to\infty\),
 \frac{2k\lambda}{a}
 \]
 
-So, for an infinite line of charge,
+For an infinite line of charge,
 \[
 \boxed{
 E=\frac{2k\lambda}{a}
@@ -670,7 +624,7 @@ E=\frac{2k\lambda}{a}
 
 \section{Limitations of Trigonometric Substitutions}
 
-Although trigonometric substitution is a powerful tool, there are limitations to it. Trigonometric substitution is most efficient when the substituted integral can be transformed using a trigonometric identity, such as the Pythagorean identities.
+Although trigonometric substitution is a powerful tool, there are limitations to it. Trigonometric substitution is most efficient when the substituted integral can be transformed using trigonometric identities, such as the Pythagorean identities.
 
 It is also crucial to pay careful attention to the domain, range, signs, and absolute values when solving the integral. Additionally, it is often algebraically complicated to back-substitute, which often requires using graphs to relate inverse trigonometric functions and trigonometric functions.
 
