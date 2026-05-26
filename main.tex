@@ -1,0 +1,236 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{An Algebraic, Graphical, and Numerical Study of Trigonometric Substitution and Its Applications in Physics}
+\author{
+    Gordon Wang
+    \and
+    David Duan
+    \and
+    Sebastian Xi
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+Trigonometric substitution is a technique used in calculus to evaluate integrals involving radical expressions such as \(\sqrt{a^2 - x^2}\), \(\sqrt{a^2 + x^2}\), and \(\sqrt{x^2 - a^2}\). This paper explains how the three major trigonometric substitutions work, how the domain and sign restrictions affect the method, how the result can be interpreted graphically and numerically, and how trigonometric substitutions can be used in physics.
+
+\section{Introduction}
+
+In integration, many expressions are difficult to handle directly because they contain square roots of squared expressions, such as  \(a^2 - x^2\), \(a^2 + x^2\), and \(x^2 - a^2\). These forms are closely related to Pythagorean identities. Therefore, using trigonometric functions to replace the variable \(x\) can possibly provide a way to work around the radicals. For instance, if an integral contains \(\sqrt{a^2 - x^2}\), the substitution \(x = a\sin(\theta)\) can eliminate the radical because of the identity \(1 - \sin^2(\theta) = \cos^2(\theta)\).
+
+This paper explains trigonometric substitution algebraically, graphically, and numerically. It also discusses how this technique is powerful in physics, especially in problems involving fields. The goal is to reveal the hidden properties inside trigonometric substitutions.
+
+\section{Key Cautions: Domain, Range, Sign, and Absolute Value}
+
+Before using trigonometric substitution, it is important to understand the restrictions that come with it.
+
+First, the original expression may have its own domain that is not simply all real numbers. For instance, \(\sqrt{a^2 - x^2}\) is only defined when \(-a \le x \le a\), assuming \(a > 0\). The expression \(\sqrt{x^2 - a^2}\) is only defined when \(x \le -a\) or \(x \ge a\).
+
+Second, the trigonometric functions used in the substitutions must be restricted so that the substitution is one-to-one – this allows reversing the substitution later. For instance, when using \(x = a\sin(\theta)\), it is common to choose \(-\frac{\pi}{2} \le \theta \le \frac{\pi}{2}\) because sine is one-to-one on that interval.
+
+Third, absolute values must be handled carefully. For instance, \(\sqrt{\cos^2(\theta)} = |\cos(\theta)|\) instead of \(\sqrt{\cos^2(\theta)} = \cos(\theta)\) should be used in the intermediate steps of substitution.
+
+The absolute values also hint at the piecewise nature of the result that this paper discusses in the later sections.
+
+\section{Derivation of the Three Main Substitutions}
+
+The three main trigonometric substitutions are based on the Pythagorean identities
+\[
+1-\sin^2\theta=\cos^2\theta,\qquad
+1+\tan^2\theta=\sec^2\theta,\qquad
+\sec^2\theta-1=\tan^2\theta.
+\]
+Assume \(a>0\).
+
+\subsection*{1. Integrals Involving \(\sqrt{a^2-u^2}\)}
+
+For integrals involving
+\[
+\sqrt{a^2-u^2},
+\]
+let
+\[
+u=a\sin\theta.
+\]
+Then
+\[
+\sqrt{a^2-u^2}
+=\sqrt{a^2-a^2\sin^2\theta}
+=\sqrt{a^2(1-\sin^2\theta)}
+=\sqrt{a^2\cos^2\theta}
+=a|\cos\theta|.
+\]
+If
+\[
+-\frac{\pi}{2}\le \theta\le \frac{\pi}{2},
+\]
+then \(\cos\theta\ge 0\), so
+\[
+\sqrt{a^2-u^2}=a\cos\theta.
+\]
+
+\begin{center}
+\includegraphics[width=0.45\textwidth]{figures/trig-substitution-sine.png}
+\end{center}
+
+\subsection*{2. Integrals Involving \(\sqrt{a^2+u^2}\)}
+
+For integrals involving
+\[
+\sqrt{a^2+u^2},
+\]
+let
+\[
+u=a\tan\theta.
+\]
+Then
+\[
+\sqrt{a^2+u^2}
+=\sqrt{a^2+a^2\tan^2\theta}
+=\sqrt{a^2(1+\tan^2\theta)}
+=\sqrt{a^2\sec^2\theta}
+=a|\sec\theta|.
+\]
+If
+\[
+-\frac{\pi}{2}<\theta<\frac{\pi}{2},
+\]
+then \(\sec\theta>0\), so
+\[
+\sqrt{a^2+u^2}=a\sec\theta.
+\]
+
+\begin{center}
+\includegraphics[width=0.45\textwidth]{figures/trig-substitution-tangent.png}
+\end{center}
+
+\subsection*{3. Integrals Involving \(\sqrt{u^2-a^2}\)}
+
+For integrals involving
+\[
+\sqrt{u^2-a^2},
+\]
+let
+\[
+u=a\sec\theta.
+\]
+Then
+\[
+\sqrt{u^2-a^2}
+=\sqrt{a^2\sec^2\theta-a^2}
+=\sqrt{a^2(\sec^2\theta-1)}
+=\sqrt{a^2\tan^2\theta}
+=a|\tan\theta|.
+\]
+Therefore,
+\[
+\sqrt{u^2-a^2}
+=
+\begin{cases}
+a\tan\theta, & u>a,\quad 0\le \theta\le \frac{\pi}{2},\\
+-a\tan\theta, & u<-a,\quad \frac{\pi}{2}<\theta\le \pi.
+\end{cases}
+\]
+
+\begin{center}
+\includegraphics[width=0.45\textwidth]{figures/trig-substitution-secant.png}
+\end{center}
+
+\section{Graphical Interpretation}
+
+\subsection*{Graph of \(\frac{1}{\sqrt{x^2-1}}\)}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/integrand-reciprocal-root.png}
+\end{center}
+
+This graph represents the integrand
+\[
+f(x)=\frac{1}{\sqrt{x^2-1}}.
+\]
+It is only defined when \(x<-1\) or \(x>1\), which explains the two separate branches. The graph becomes very large near \(x=-1\) and \(x=1\), so an antiderivative should have very steep slopes near those points. Farther away from the center, the graph gets closer to zero, so the antiderivative should flatten out.
+
+\subsection*{Graph of \(\ln\left|x+\sqrt{x^2-1}\right|\)}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/antiderivative-log-root.png}
+\end{center}
+
+This graph represents the antiderivative
+\[
+F(x)=\ln\left|x+\sqrt{x^2-1}\right|.
+\]
+The two graphs align because
+\[
+F'(x)=\frac{1}{\sqrt{x^2-1}}.
+\]
+In other words, the height of the first graph gives the slope of the second graph. Where \(\frac{1}{\sqrt{x^2-1}}\) is large, the graph of \(F(x)\) changes quickly; where \(\frac{1}{\sqrt{x^2-1}}\) is small, the graph of \(F(x)\) changes more slowly. This matches the idea that \(F(x)\) is the integral of \(f(x)\).
+
+\section{Numerical Interpretation with Definite Integrals}
+
+\section{Application In Physics}
+
+One important application of trigonometric substitution in physics is when calculating the electric field produced by a straight line of charge.
+
+Suppose a straight rod, with length \(2L\), lies along the \(x\)-axis and has uniform charge density \(\lambda\). If we want to find the electric field at a point distance \(a\) above the center of the rod, then each infinitesimally small piece of charge contributes a small amount of electric field. By symmetry, the horizontal components of the electric field cancel out, while the vertical components add up.
+
+Coulomb’s law states that a small amount of charge creates a field that is inversely proportional to the square of the distance:
+
+\[
+dE = \frac{k\,dq}{r^2}
+\]
+
+where \(k\) is Coulomb’s constant, \(dq\) is a small piece of charge, and \(r\) is the distance from that charge to the observation point.
+
+For a small piece of charge located at position \(x\), the distance to the point is:
+
+\[
+r = \sqrt{x^2 + a^2}
+\]
+
+The vertical component of the electric field can be found with the following integral:
+\[
+E = k \int \frac{dq}{r^2}
+\]
+\[
+dq = \lambda\,dx
+\]
+\[
+r = \sqrt{x^2 + a^2}
+\]
+\[
+dE_y = \frac{k\lambda a\,dx}{(x^2 + a^2)^{3/2}}
+\]
+\[
+E = k\lambda a \int_{-L}^{L} \frac{dx}{(x^2 + a^2)^{3/2}}
+\]
+It is difficult to evaluate directly. Therefore, we use trigonometric substitution:
+
+\[
+x = a\tan(\theta)
+\]
+
+Calculations etc
+
+\section{Limitations of Trigonometric Substitutions}
+
+Although trigonometric substitution is a powerful tool, there are limitations to it. Trigonometric substitution is most efficient when the substituted integral can be transformed using a trigonometric identity, such as the Pythagorean theorem.
+
+It’s also crucial to keep careful attention to the domain, range, signs, and absolute values when solving the integral. Additionally, it’s also often algebraically complicated to back-substitute, which often requires using graphs to relate inverse trigonometric functions and trigonometric functions.
+
+\section{Conclusion}
+
+Trigonometric substitution is a powerful, yet complicated, integration technique. Algebraically, it transforms radical expressions using Pythagorean identities to simpler trigonometric functions. In physics, it appears especially powerful in problems involving fields.
+
+By understanding trigonometric substitution algebraically and seeing it work graphically and numerically, the method reveals a much deeper meaning than just a trick to work around radicals.
+
+\end{document}
