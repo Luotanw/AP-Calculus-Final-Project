@@ -21,18 +21,18 @@ $$
 Explain the obstacle:
 
 - The square root makes the integral hard to handle directly.
-- A normal \(u\)-substitution does not simplify it cleanly.
-- If \(u=x^2-1\), then \(du=2x\,dx\), but there is no \(x\) in the numerator.
+- A normal $u$-substitution does not simplify it cleanly.
+- If $u=x^2-1$, then $du=2x\,dx$, but there is no $x$ in the numerator.
 
 Transition:
 
-The expression \(x^2-1\) looks similar to the identity
+The expression $x^2-1$ looks similar to the identity
 
 $$
 \sec^2\theta-1=\tan^2\theta
 $$
 
-so we try to rewrite \(x\) as a secant function.
+so we try to rewrite $x$ as a secant function.
 
 ---
 
@@ -85,7 +85,7 @@ $$
 x\in(-\infty,-1)\cup(1,\infty)
 $$
 
-To make \(x=\sec\theta\) reversible, restrict \(\theta\) to
+To make $x=\sec\theta$ reversible, restrict $\theta$ to
 
 $$
 \theta\in\left(0,\frac{\pi}{2}\right)\cup
@@ -111,7 +111,7 @@ $$
 \end{cases}
 $$
 
-This determines how to simplify \(|\tan\theta|\).
+This determines how to simplify $|\tan\theta|$.
 
 ---
 
@@ -123,7 +123,7 @@ $$
 \int \frac{dx}{\sqrt{x^2-1}}
 $$
 
-Substitute \(x=\sec\theta\) and \(dx=\sec\theta\tan\theta\,d\theta\):
+Substitute $x=\sec\theta$ and $dx=\sec\theta\tan\theta\,d\theta$:
 
 $$
 \int
@@ -162,7 +162,7 @@ Presentation note: This is the main "payoff" step. The radical disappears becaus
 
 ---
 
-## 5. Integrate in Terms of \(\theta\) (5:15-6:30)
+## 5. Integrate in Terms of $\theta$ (5:15-6:30)
 
 Use the standard result:
 
@@ -186,7 +186,7 @@ Keep this part brief. The focus of the presentation is the substitution, not pro
 
 ---
 
-## 6. Back-Substitute to Return to \(x\) (6:30-8:00)
+## 6. Back-Substitute to Return to $x$ (6:30-8:00)
 
 Since
 
@@ -194,7 +194,7 @@ $$
 x=\sec\theta
 $$
 
-we need \(\tan\theta\) in terms of \(x\).
+we need $\tan\theta$ in terms of $x$.
 
 Using
 
@@ -238,8 +238,8 @@ Use one of these, depending on slide time:
 
 Option A: Graphical interpretation
 
-- The integrand is only defined on \(x<-1\) and \(x>1\).
-- It becomes very large near \(x=-1\) and \(x=1\).
+- The integrand is only defined on $x<-1$ and $x>1$.
+- It becomes very large near $x=-1$ and $x=1$.
 - The antiderivative should have very steep slopes near those points.
 
 Option B: Quick derivative check
