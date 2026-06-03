@@ -1,4 +1,4 @@
-# Presentation Outline: Introducing Trig Sub
+# Presentation Outline: Introducing Trig Sus
 
 Goal: Introduce trigonometric substitution through one worked example:
 
