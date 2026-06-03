@@ -20,7 +20,7 @@ $$
 
 Explain the obstacle:
 
-- The square root makes the integral hard to handle directly.
+- The square root makes the integral hard to be handled.
 - A normal $u$-substitution does not simplify it cleanly.
 - If $u=x^2-1$, then $du=2x\,dx$, but there is no $x$ in the numerator.
 

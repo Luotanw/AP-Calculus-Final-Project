@@ -2,7 +2,7 @@
   "workbench.colorTheme": "Light 2026",
   "window.autoDetectColorScheme": true,
 
-  "gitlens.ai.model": "vscode",
+  "gitlens.ai.model": "gitkraken",
   "gitlens.ai.vscode.model": "copilot:claude-haiku-4.5",
 
   "[latex]": {
