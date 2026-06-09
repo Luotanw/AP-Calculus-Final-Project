@@ -4,12 +4,12 @@ The project explains the three standard trigonometric
 substitutions, emphasizes domain and sign restrictions, works through a detailed
 example involving
 
-```tex
-\int \frac{dx}{\sqrt{x^2 - 1}},
+```math
+\int \frac{dx}{\sqrt{x^2 - 1}}
 ```
 
-and applies the method to a physics problem: finding the electric field from a
-uniformly charged finite line segment.
+The project also applies the method to a physics problem: finding the electric
+field from a uniformly charged finite line segment.
 
 The main finished paper is:
 
@@ -55,7 +55,7 @@ The main finished paper is:
 - cautions about domain, range, signs, and absolute values;
 - derivations of the sine, tangent, and secant substitutions;
 - a full branch-by-branch derivation of
-  `\int dx / \sqrt{x^2 - 1}`;
+  $\int \frac{dx}{\sqrt{x^2 - 1}}$;
 - graphical and numerical interpretations of the result;
 - a physics application deriving the electric field from a charged rod.
 
@@ -79,7 +79,7 @@ is a reference image for the standard three trigonometric substitution forms.
 
 [Presentation/Presentation Outline.md](Presentation/Presentation%20Outline.md)
 is a timed presentation outline centered on the worked example
-`\int dx / \sqrt{x^2 - 1}`.
+$\int \frac{dx}{\sqrt{x^2 - 1}}$.
 
 ## Rebuilding the Paper
 
