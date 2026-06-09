@@ -1,7 +1,6 @@
 # Trigonometric Substitution Explained with a Physics Application
 
-This repository contains an AP Calculus final project on trigonometric
-substitution. The project explains the three standard trigonometric
+The project explains the three standard trigonometric
 substitutions, emphasizes domain and sign restrictions, works through a detailed
 example involving
 
